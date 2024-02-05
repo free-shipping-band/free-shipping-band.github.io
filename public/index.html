@@ -27,14 +27,30 @@
   <body>
     <header>
       <div class="navbar bg-base-100 bg-neutral mb-10">
-        <div class="flex-1">
-          <a href="/" aria-label="home">
-            <img src="./static/img/free-shipping-nav.png" alt="Free Shipping Band" />
-          </a>
+        <div class="navbar-start">
+          <div class="flex-1">
+            <a href="/" aria-label="home">
+              <img src="./static/img/free-shipping-nav.png" alt="Free Shipping Band" />
+            </a>
+          </div>
         </div>
-        <a class="btn btn-ghost text-xl" href="/about-us" aria-label="about us">About Us</a>
-        <a class="btn btn-ghost text-xl" href="/members" aria-label="members">Members</a>
-        <a class="btn btn-ghost text-xl" href="/contact" aria-label="contact">Contact</a>
+        <div class="navbar-end">
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-2 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a href="/about-us" aria-label="about us">About Us</a></li>
+              <li><a href="/members" aria-label="members">Members</a></li>
+              <li><a href="/contact" aria-label="contact">Contact<a></li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex">
+            <a class="btn btn-ghost text-xl" href="/about-us" aria-label="about us">About Us</a>
+            <a class="btn btn-ghost text-xl" href="/members" aria-label="members">Members</a>
+            <a class="btn btn-ghost text-xl" href="/contact" aria-label="contact">Contact</a>
+          </div>
+        </div>
       </div
     </header>
     <h1 class="text-3xl font-bold mb-10 text-center">
